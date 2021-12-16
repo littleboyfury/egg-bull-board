@@ -2,7 +2,6 @@ logs/
 npm-debug.log
 node_modules/
 coverage/
-run/
 .github
 .DS_Store
 .vscode
@@ -13,17 +12,7 @@ run/
 !.autod.conf.js
 appveyor.yml
 .travis.yml
-
-app/**/*.js
-test/**/*.js
-config/**/*.js
-app/**/*.map
 test/**/*.map
-config/**/*.map
-config/config.local.ts
-config/config.unittest.ts
 .nyc_output/
 .idea
-gears/auth_key.p8
-
 dist

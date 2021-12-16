@@ -11,7 +11,13 @@
     "egg",
     "bull-board",
     "egg-bull-board",
-    "egg-adapter"
+    "egg-adapter",
+    "dashboard",
+    "bull",
+    "bullmq",
+    "redis",
+    "queue",
+    "monitoring"
   ],
   "author": "skyfury",
   "license": "MIT",
@@ -23,14 +29,17 @@
     "@types/koa-router": "^7.4.4",
     "@types/koa-static": "^4.0.2"
   },
+  "workspaces": [
+    "src/*"
+  ],
   "files": [
     "dist"
   ],
   "bugs": {
-    "url": "https://github.com/felixmosh/bull-board/issues"
+    "url": "https://github.com/littleboyfury/egg-bull-board/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixmosh/bull-board.git"
+    "url": "git+https://github.com/littleboyfury/egg-bull-board.git"
   }
 }

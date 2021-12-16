@@ -1,21 +1,3 @@
-# egg bull board
-
-## Install
-
-```bash
-npm install @skyfury/egg-bull-board -S
-```
-
-## bull-board
-
-[bull-board](https://github.com/felixmosh/bull-board)
-
-## Use
-
-app/router.js
-
-```javascript
-// app/router.js
 'use strict';
 
 const Bull = require('bull')
@@ -36,7 +18,7 @@ const createQueue = (name) => new Bull(name, { connection: redisOptions });
  * @param {Egg.Application} app - egg application
  */
 module.exports = app => {
-  const { router, controller } = app;
+  const { router } = app;
 
   const bullQueue = createQueue('bull');
   const serverAdapter = new EggAdapter();
@@ -62,12 +44,10 @@ module.exports = app => {
     };
   });
 
-  console.log(`For the UI of instance1, open http://localhost:${app.config.cluster.listen.port}/ui`);
+  console.log(`For the UI of instance1, open http://localhost:7001/ui`);
   console.log('Make sure Redis is running on port 6379 by default');
   console.log('To populate the queue, run:');
-  console.log(`  curl http://localhost:${app.config.cluster.listen.port}/add?title=Example`);
+  console.log(`  curl http://localhost:7001/add?title=Example`);
   console.log('To populate the queue with custom options (opts), run:');
-  console.log(`  curl http://localhost:${app.config.cluster.listen.port}/add?title=Test&opts[delay]=9`);
+  console.log(`  curl http://localhost:7001/add?title=Test&opts[delay]=9`);
 };
-
-```
