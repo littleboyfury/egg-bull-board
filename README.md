@@ -12,10 +12,9 @@ npm install @skyfury/egg-bull-board -S
 
 ## Use
 
-app/router.js
+[with-egg](exmaple/with-egg/app/router.js)
 
 ```javascript
-// app/router.js
 'use strict';
 
 const Bull = require('bull')
@@ -69,5 +68,4 @@ module.exports = app => {
   console.log('To populate the queue with custom options (opts), run:');
   console.log(`  curl http://localhost:${app.config.cluster.listen.port}/add?title=Test&opts[delay]=9`);
 };
-
 ```
