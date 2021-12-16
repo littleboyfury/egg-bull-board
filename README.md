@@ -38,15 +38,15 @@ module.exports = app => {
   const { router, controller } = app;
 
   const bullQueue = createQueue('bull');
+  
   const serverAdapter = new EggAdapter();
-
   createBullBoard({
     queues: [new BullAdapter(bullQueue)],
     serverAdapter,
   });
-
   serverAdapter.setBasePath('/ui');
   app.use(serverAdapter.registerPlugin());
+  
   router.get('/add', async (ctx) => {
     const opts = ctx.query.opts || {};
 
