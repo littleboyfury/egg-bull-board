@@ -1,6 +1,6 @@
 {
   "name": "@skyfury/egg-bull-board",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "EggAdapter for bull-board",
   "main": "dist/index.js",
   "scripts": {

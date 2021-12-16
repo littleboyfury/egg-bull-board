@@ -1,5 +1,21 @@
 # egg bull board
 
+<p align="center">
+  <a href="https://github.com/vcapretz/bull-board/blob/master/LICENSE">
+    <img alt="licence" src="https://img.shields.io/github/license/littleboyfury/egg-bull-board">
+  </a>
+  <img alt="open issues" src="https://img.shields.io/github/issues/littleboyfury/egg-bull-board"/>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/Typescript-4.3.5-green.svg" alt="typescript">
+  </a>
+  <a href="https://nodejs.org/en/">
+    <img src="https://img.shields.io/badge/node->_v12-green.svg" alt="node">
+  </a>
+  <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">
+    <img src="https://img.shields.io/badge/Ecmascript-2019+-green.svg" alt="Ecmascript">
+  </a>
+<p>
+
 ## Install
 
 ```bash
