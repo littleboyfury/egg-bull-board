@@ -1,0 +1,36 @@
+{
+  "name": "@skyfury/egg-bull-board",
+  "version": "1.0.1",
+  "description": "Egg Adapter for bull board",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "egg",
+    "bull-board",
+    "egg-bull-board",
+    "egg-adapter"
+  ],
+  "author": "skyfury",
+  "license": "MIT",
+  "dependencies": {
+    "@bull-board/koa": "^3.8.1"
+  },
+  "devDependencies": {
+    "@types/koa-mount": "^4.0.1",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/felixmosh/bull-board/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixmosh/bull-board.git"
+  }
+}
