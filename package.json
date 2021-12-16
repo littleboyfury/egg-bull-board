@@ -1,7 +1,7 @@
 {
   "name": "@skyfury/egg-bull-board",
-  "version": "1.0.2",
-  "description": "Egg Adapter for bull board",
+  "version": "1.0.3",
+  "description": "EggAdapter for bull-board",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

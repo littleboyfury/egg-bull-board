@@ -2,7 +2,6 @@ logs/
 npm-debug.log
 node_modules/
 coverage/
-.github
 .DS_Store
 .vscode
 *.swp

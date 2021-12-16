@@ -22,8 +22,14 @@ export class EggAdapter implements IServerAdapter {
   private viewPath: string | undefined
   private entryRoute: AppViewRoute | undefined
   private apiRoutes: AppControllerRoute[] | undefined
+
+  // @bull-board/ui path
   private staticPath = path.resolve('node_modules/@bull-board/ui/dist')
 
+  /**
+   * base url
+   * @param path
+   */
   public setBasePath(path: string): EggAdapter {
     this.basePath = path
     return this
@@ -108,7 +114,7 @@ export class EggAdapter implements IServerAdapter {
       router[method](path, async (ctx) => {
         const { name } = handler();
 
-        // need coverage egg render
+        // rewrite render
         (ctx as any).render = views(this.staticPath, {
           extension: 'ejs',
           map: 'ejs'
