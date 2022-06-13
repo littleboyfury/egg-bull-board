@@ -1,6 +1,6 @@
 {
   "name": "@skyfury/egg-bull-board",
-  "version": "3.11.1",
+  "version": "4.0.0",
   "description": "EggAdapter for bull-board",
   "main": "dist/index.js",
   "scripts": {
@@ -22,8 +22,8 @@
   "author": "skyfury",
   "license": "MIT",
   "dependencies": {
-    "@bull-board/api": "^3.11.1",
-    "@bull-board/ui": "3.11.1",
+    "@bull-board/api": "4.0.0",
+    "@bull-board/ui": "4.0.0",
     "ejs": "^3.1.7",
     "koa": "^2.13.1",
     "koa-mount": "^4.0.0",
