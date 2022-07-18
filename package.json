@@ -22,8 +22,8 @@
   "author": "skyfury",
   "license": "MIT",
   "dependencies": {
-    "@bull-board/api": "4.0.0",
-    "@bull-board/ui": "4.0.0",
+    "@bull-board/api": "4.0.1",
+    "@bull-board/ui": "4.0.1",
     "ejs": "^3.1.7",
     "koa": "^2.13.1",
     "koa-mount": "^4.0.0",
